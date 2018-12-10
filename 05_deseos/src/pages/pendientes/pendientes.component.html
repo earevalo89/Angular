@@ -14,8 +14,8 @@
 
         <h2>{{ lista.nombre }}</h2>
         <ion-list>
-            <ion-item>
-                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon> Tetris
+            <ion-item *ngFor="let item of lista.items">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon> {{ item }}
             </ion-item>
             <ion-item>
                 <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon> Tetris

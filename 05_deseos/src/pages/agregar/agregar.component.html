@@ -30,11 +30,13 @@
 
             <ion-list>
                 <ion-item *ngFor="let item of items; let i = index">
-                    <button ion-button color="dark" clear>{{ item.nombre }}</button>
-                    <button ion-button outline item-right color="danger">
-                      <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
-                      &nbsp;Borrar Item ({{ i }})
+                    <!--<button ion-button color="dark" clear>
+                      {{ item.nombre }}
                     </button>
+                     <button ion-button outline item-right color="danger">
+                      <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+                      Borrar Item ({{ i }})</button> -->
+                    <H2>{{ i }}</H2>
                 </ion-item>
             </ion-list>
 
